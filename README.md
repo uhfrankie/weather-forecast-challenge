@@ -1,4 +1,4 @@
-# challenge6
+# Challenge 6 ~ Weather App
 
 <h1> User Story </h1>
 <p> 
