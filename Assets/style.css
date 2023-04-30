@@ -1,0 +1,61 @@
+body {
+    margin: 0 auto;
+    padding: 0;
+}
+
+header {
+    display: flex;
+    justify-content: center;
+    background-color: paleturquoise;
+    color: gray;
+    height: 50px;
+}
+
+h1,
+h2,
+h3,
+h4 {
+    margin-bottom: 0.625rem;
+    color: gray;
+    font-weight: 700;
+    line-height: 1.2;
+    font-size: 50px;
+    -ms-flex-item-align: center;
+}
+
+.box {
+    border: 2px solid black;
+}
+
+#fiveDayForecast {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+#searchHistHeader {
+   margin-right: 150px;
+}
+
+.imgClass {
+    height: 50px;
+}
+
+.bottom {
+    margin: 0;
+}
+
+.forecastStyl {
+    background-color: paleturquoise;
+    color: gray;
+    margin: 5px;
+}
+
+.forecast {
+    width: 75%;
+}
+
+.search-card {
+    display: flex;
+    flex-direction: column;
+    margin-top: 10px;
+}

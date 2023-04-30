@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Weather Forecast </title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css" 
+    integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" 
+    crossorigin="anonymous">
+    <link rel="stylesheet" href="./Assets/style.css"/>
+
+</head>
+<body>
+    <header>
+        <h1> Weather Forecast Dashboard </h1>
+    </header>
+    
+    <div class="contrast-input">
+        <input id="input" type=text" class=" form-control" placeholder="text"/>
+    </div>
+<div class="contrast-input">
+    <button id="submit" class="btn btn-secondary">Submit</button>
+</div>
+
+<!-- 5-day forecast -->
+<header> 
+    <h2> 5-Day Weather Forecast! </h2>
+</header>
+<section class="container-lg shadow p-3">
+    <div class="row">
+        <div class="col-3 search card boxy">
+            <div id="search-city">
+                <h3> Search a city! </h3>
+            </div>
+        <div id="search-input">
+            <input
+            type="text"
+            placeholder="Enter City"
+            id="citySearched"
+            class="userSearchC"
+            />
+        </div>
+
+        <div id="searchBtn" class="searchBtnSty">
+            <button type="button" class="btn btn-secondary" id="clickSearch"> Search </button>
+        </div>
+        </div>
+
+        <div class=" col-9 box">
+            <div id="cityName"><span class="city"></span></div>
+            <img id="top-img" src=" "/>
+            <p id="cityTemp"></p>
+            <p id="cityWindspeed"></p>
+            <p id="cityHumidity"></p>
+        </div>
+    </div>
+</section>
+
+<!-- history -->
+<section class="container bottom">
+    <div class="row">
+        <div class="searchHistory col-3" id="history">
+            <div id="searchHistHeader" class="boxxy">
+                <h3> Recent Search History: </h3>
+            </div>
+            <div id="listSearchHist"></div>
+        </div>
+
+        <!-- 5-day weather forecast -->
+        <div id="fiveDayForecast" class="col-9 forecast">
+            <div id="dayForecast1" class="forecastStyl">
+                <h4 id="current1Date" class="paddingForMainTxt">
+                    Current Date 1
+                </h4>
+                <p id="day1" class="paddingForMainTxt"> Day of the Week </p>
+                <p class="image">
+                    <img
+                    src="./Assets/placeholder.png"
+                    class="imgClass paddingForMainTxt"
+                    id="1img"
+                    />
+                </p>
+                <p id="day1Temp" class="paddingForMainTxt maxValues"> Day 1 Temp </p>
+                <p id="day1WindSpeed" class="paddingForMainTxt maxValues"> Day 1 Wind Speed </p>
+                <p id="day1Humidity" class="paddingForMainTxt maxValues"> Day 1 Humidity </p>
+            </div>
+
+            <div id="dayForecast2" class="forecastStyl">
+                <h4 id="current2Date" class="paddingForMainTxt">
+                    Current Date 2
+                </h4>
+                <p id="day2" class="paddingForMainTxt"> Day of the Week </p>
+                <p class="image">
+                    <img
+                    src="./Assets/placeholder.png"
+                    class="imgClass paddingForMainTxt"
+                    id="2img"
+                    />
+                </p>
+                <p id="day2Temp" class="paddingForMainTxt maxValues"> Day 2 Temp </p>
+                <p id="day2WindSpeed" class="paddingForMainTxt maxValues"> Day 2 Wind Speed </p>
+                <p id="day2Humidity" class="paddingForMainTxt maxValues"> Day 2 Humidity </p>
+            </div>
+
+            <div id="dayForecast3" class="forecastStyl">
+                <h4 id="current3Date" class="paddingForMainTxt">
+                    Current Date 3
+                </h4>
+                <p id="day3" class="paddingForMainTxt"> Day of the Week </p>
+                <p class="image">
+                    <img
+                    src="./Assets/placeholder.png"
+                    class="imgClass paddingForMainTxt"
+                    id="3img"
+                    />
+                </p>
+                <p id="day3Temp" class="paddingForMainTxt maxValues"> Day 3 Temp </p>
+                <p id="day3WindSpeed" class="paddingForMainTxt maxValues"> Day 3 Wind Speed </p>
+                <p id="day3Humidity" class="paddingForMainTxt maxValues"> Day 3 Humidity </p>
+            </div>
+
+            <div id="dayForecast4" class="forecastStyl">
+                <h4 id="current4Date" class="paddingForMainTxt">
+                    Current Date 4
+                </h4>
+                <p id="day4" class="paddingForMainTxt"> Day of the Week </p>
+                <p class="image">
+                    <img
+                    src="./Assets/placeholder.png"
+                    class="imgClass paddingForMainTxt"
+                    id="4img"
+                    />
+                </p>
+                <p id="day4Temp" class="paddingForMainTxt maxValues"> Day 4 Temp </p>
+                <p id="day4WindSpeed" class="paddingForMainTxt maxValues"> Day 4 Wind Speed </p>
+                <p id="day4Humidity" class="paddingForMainTxt maxValues"> Day 4 Humidity </p>
+            </div>
+
+            <div id="dayForecast5" class="forecastStyl">
+                <h4 id="current1Date" class="paddingForMainTxt">
+                    Current Date 5
+                </h4>
+                <p id="day5" class="paddingForMainTxt"> Day of the Week </p>
+                <p class="image">
+                    <img
+                    src="./Assets/placeholder.png"
+                    class="imgClass paddingForMainTxt"
+                    id="5img"
+                    />
+                </p>
+                <p id="day5Temp" class="paddingForMainTxt maxValues"> Day 5 Temp </p>
+                <p id="day5WindSpeed" class="paddingForMainTxt maxValues"> Day 5 Wind Speed </p>
+                <p id="day5Humidity" class="paddingForMainTxt maxValues"> Day 5 Humidity </p>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css" 
+    integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" 
+    crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.6.4.js" 
+    integrity="sha256-a9jBBRygX1Bh5lt8GZjXDzyOB+bWve9EiO7tROUtj/E=" 
+    crossorigin="anonymous"></script>
+    <script src="./Assets/script.js"></script>
+</body>
+</html>
